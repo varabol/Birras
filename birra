@@ -1,0 +1,30 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main()
+{
+    bool salida = false;
+    int num;
+    
+    do {
+        cout << "\n Cuantas Birras te has tomado ya :";
+        cin >> num;
+        cout << "Comprobando .";
+        for (int i = 0; i < 9; i++) {
+            cout << ".";
+            Sleep(200);
+        }
+
+        if (num == 10) salida = true;
+        
+         
+
+
+    }
+
+    while (!salida);
+    cout << "\n Vale...";
+    cout << "\n Vete a casa ya :D";
+    return 0;
+}
